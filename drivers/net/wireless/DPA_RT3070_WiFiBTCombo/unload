@@ -1,0 +1,4 @@
+ifconfig ra0 down
+rmmod rtnet3070sta
+rmmod rt3070sta
+rmmod rtutil3070sta

@@ -1,0 +1,18 @@
+#
+# Release file for AP Mode
+#
+include $(RT28xx_DIR)/os/linux/config.mk
+
+MOD_NAME = wapi_module
+
+OBJ := $(MOD_NAME).o
+
+WAPI_M_OBJ := \
+	$(RT28xx_DIR)/common/wapi_sms4.o\
+	$(RT28xx_DIR)/common/wapi_crypt.o
+				
+all:$(OBJ)				
+				
+$(MOD_NAME).o: $(WAPI_M_OBJ)
+	$(LD) -r $^ -o $@
+			

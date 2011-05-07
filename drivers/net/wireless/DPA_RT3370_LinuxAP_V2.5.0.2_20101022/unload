@@ -1,0 +1,5 @@
+rmmod rtnet3370ap
+rmmod rt3370ap
+rmmod rtutil3370ap
+rmmod wapi_module
+
