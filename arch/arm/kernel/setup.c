@@ -100,8 +100,10 @@ struct cpu_user_fns cpu_user;
 #ifdef MULTI_CACHE
 struct cpu_cache_fns cpu_cache;
 #endif
+
 #ifdef CONFIG_OUTER_CACHE
 struct outer_cache_fns outer_cache;
+/// EXPORT_SYMBOL(outer_cache); ///silver-alx
 #endif
 
 struct stack {
